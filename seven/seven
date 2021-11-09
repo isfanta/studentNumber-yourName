@@ -1,0 +1,40 @@
+int y,x;
+
+void setup(){
+  background(255);
+  //stroke(255);
+  size(1000,800);
+  frameRate(10);
+
+}
+
+void draw(){
+    background(255);
+    translate(300,800);
+      y=0;
+    branch(150);
+   // saveFrame();
+}
+
+void mousePressed(){
+  x++;
+}
+
+void branch(float len) {
+  float theta = random(-PI/6, PI/6);
+  strokeWeight(1+len/25);
+  line(0, 0,len*sin(theta)+(mouseX-len*sin(theta))*0.1, -len*cos(theta)+(mouseY+len*cos(theta))*0.1);
+  translate(len*sin(theta)+(mouseX-len*sin(theta))*0.1, -len*cos(theta)+(mouseY+len*cos(theta))*0.1);
+  len=len/2;
+  if (len > 2&&y<x) {
+    y++;
+    int n = int(random(2,4));
+    for (int i = 0; i < n; i++) {
+      theta = random(-PI/4, PI/4);
+      pushMatrix();
+      rotate(theta);
+      branch(len);
+      popMatrix();
+    }
+  }
+}
