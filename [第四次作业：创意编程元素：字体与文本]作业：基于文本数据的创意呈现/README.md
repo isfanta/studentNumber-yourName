@@ -1,11 +1,25 @@
-### 作业要求
-#### 1.选择一段文本，根据你的创意进行演绎规则的设计，实现对文本内容的图形化呈现。
-#### 2.通过网站检索文本可视化项目，从中找出你所喜欢的作品，形式不限，可以是海报、动画、交互媒体和装置。归纳一些应用文字创作图形作品的方法和思路，并进行案例整理，具体包括：
+围绕文本主题写了两段代码
 
-- 项目名称
-- 作者/艺术家名称
-- 来源/出处（URL等）
-- 概要描述（文字描述）
-- 截图/视频素材
+第一份，文本this is my homework围绕一根略倾斜的的轴自旋
 
-✏️简单描述你的创意内容，将程序运行结果附在这里。
+效果图
+
+![3](https://user-images.githubusercontent.com/90584636/140874992-593c8e27-cce5-428b-97f9-441b491886cc.png)
+
+
+第二份，彩点平铺组合成this is my homework 的样子
+
+![4](https://user-images.githubusercontent.com/90584636/140875141-9188b313-cabe-4133-b499-ef85e3080bcb.png)
+
+光标扫描将彩点变成文本
+
+![5](https://user-images.githubusercontent.com/90584636/140875220-ff51d85d-15f8-4850-81f0-8da0804a5299.png)
+
+文本被小球染色，并重新变回像素点
+
+![6](https://user-images.githubusercontent.com/90584636/140876537-f64f7f71-133d-4deb-b21d-5d180069cd60.png)
+
+文本崩散消失
+
+![7](https://user-images.githubusercontent.com/90584636/140876620-769925fd-f332-446b-a90d-0a9b97187d24.png)
+
